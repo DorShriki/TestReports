@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Report</title>
+</head>
+<body>
+    <header id="logos">
+        <img src="./images/leumiLogo.jpg" id="logo-leumi" onclick="addTest('Dor',2,false)">
+        <h1>This Is The Header Of This suite Test</h1>
+        <img src="./images/nessLogo.jpg" id="logo-ness" onclick="addStep('Step2', 'To Do Something', true)">
+    </header>
+
+    <section id="details">
+        <table id="testsDetails">
+            <tr>
+                <th>Number Of Tests</th>
+                <th>Run Time</th>
+                <th>Version</th>
+                <th>Test Type</th>
+                <th>Pass</th>
+                <th>Fail</th>
+            </tr>
+            <tr style="font-weight: bold;">
+                <td>10</td>
+                <td>0 Days and 01:37:59</td>
+                <td> 999 </td>
+                <td>Eclipse</td>
+                <td style="width: 20%; height: 100%; background-color: green;"> 8/10 80% </td>
+                <td style="width: 20%; height: 100%; background-color: red;">2/10 20%</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="report">
+        <table id = "testsTable">
+            <tr>
+                <th style="width: 60%;">Test Name</th>
+                <th>Test Id</th>
+                <th>Status</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>Dor</td>
+                <td>1</td>
+                <td>Pass</td>
+                <td>
+                    <button class="btn-details" onclick="displayDetails()">Details</button>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- //////////////////////////////////////////////////////////// -->
+
+    <div id="test">
+        <table id="stepsTable">
+            <tr>
+                <th>Time</th>
+                <th>Step Name</th>
+                <th style="width: 30%;">Expected</th>
+                <th>Status</th>
+                <th>Screen Shot</th>
+            </tr>
+            <!-- <tr>
+                <td>01.02.20</td>
+                <td>Apply Accessibility</td>
+                <td>Add Accessibility to driver in hb3</td>
+                <td>Pass</td>
+                <td>
+                    <button class="btn-details">Screen Shot</button>
+                </td>
+            </tr> -->
+        </table>
+    </div>
+    <div id="overlay" onclick="cancle()"></div>
+    <script src="main.js"></script>
+</body>
+</html>
